@@ -21,7 +21,9 @@ What is the worst-case big $\Theta$ time complexity of your algorithm?
 
 ## My Runtime Analysis
 
+For just the factorial() function, the first thing that is checked is whether $n$ is negative or 0. If it is either of these, the runtime is constant. The worst case runtime for $n > 0$ is a linear runtime ($\Theta(n)$) for factorial() because it starts from the base case, and builds up the final result from there. No repeated operations occur.
 
+For the e() function, is it similar with the initial checks and for loop structure, but we call factorial() itself for every iteration of the for loop. For the worst case, this results in a double-nested for loop, meaning e() has a time complexity of $\Theta(n^2)$ since both for loops are linear, but are nested, creating a quadratic growth.
 
 # Sources
 
